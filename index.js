@@ -1,5 +1,4 @@
 const Discord = require("Discord.js")
-const keepAlive = require("./server")
 const config = require('./config.json')
 const { MessageEmbed } = require('discord.js');
 var talk = true
@@ -94,5 +93,4 @@ client.on('message', message => {
     
 });
 
-keepAlive()
 client.login(config.token)
