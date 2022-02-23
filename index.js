@@ -1,4 +1,10 @@
 const Discord = require("Discord.js")
+const path = require('path')
+const dotenv = require('dotenv')
+require('dotenv').config();
+// Load config
+dotenv.config({ path: './config/config.env' })
+
 const config = require('./config.json')
 const { MessageEmbed } = require('discord.js');
 var talk = true
